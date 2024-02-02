@@ -119,11 +119,7 @@ function nextQuestion(){
    answer4.innerHTML = "Полтергейст";
    break;
    case 16:
-   img.src = "./img/fin.jpg";
-   answer1.style.visibility = "hidden" ;
-   answer2.style.visibility = "hidden" ;
-   answer3.style.visibility = "hidden" ;
-   answer4.style.visibility = "hidden" ;
+   end();
    break;
  }
 }
@@ -289,4 +285,13 @@ function match() {
 function dismatch() {
   question = question + 1;
   nextQuestion();
+}
+function end() {
+
+  scorePrnt.innerHTML = score + " / 15";
+  img.src = "./img/fin.jpg";
+  answer1.style.visibility = "hidden" ;
+  answer2.style.visibility = "hidden" ;
+  answer3.style.visibility = "hidden" ;
+  answer4.style.visibility = "hidden" ;
 }
