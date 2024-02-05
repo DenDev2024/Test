@@ -6,26 +6,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+ <div class="corner">
+  <p id="top">Текущий вопрос</p>
+  <img id="nope" src="./images/nope.gif"></img>
+</div>
 
 <div class="container">
-
-      <p id="top">Текущий вопрос</p>
-      <img id="nope" src="./images/nope.gif"></img>
   <div class="content">
 
     <p id="score"> Правильных ответов: 0 </p>
     <img id="img" src="./images/1.png"></img>
-    <p><input id="input" type="text" oninput="input()"></p>
+    <input id="input" type="text" oninput="input()">
 
 
     <button id="skip" onclick="nextQuestion()">skip</button>
-    <button id="correct" onclick="correct()">correct</button>
+    <button id="correctBtn" onclick="correct()">correct</button>
   </div>
-
-  <audio id="music" controls autoplay loop
-  src="sounds/Angelo Badalamenti - Twin Peaks Theme.mp3"></audio>
-
-    <button id="play" onclick="play(this)">play</button>
 
 </div>
 
