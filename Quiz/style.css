@@ -1,73 +1,42 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
-body{
+
+*{
   margin: 0;
-  background-image: url(./img/bgr.jpg);
-  background-color: grey;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to bottom, cyan, purple);
   height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-.panel{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 800px;
-  width: 800px;
-
-  backdrop-filter: blur(2px);
-  border-radius: 25px;
-  background:rgba(85,85,85,0.1);
-}
-
-.panelContent{
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-}
-
-#score{
-  position: absolute;
-  padding-left: 5px;
-
-  width: 100px;
-  color: white;
-  background-color: black;
-  border-radius: 25px;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 25px;
-  text-align: center;
-}
-
-img{
-  height: 500px;
-  border-radius: 10px;
-}
-
 button{
-  background:rgba(255,255,255,0.1);
-  backdrop-filter: blur(2px);
-  color: #fff;
+  margin: 10px;
+  
+  
+  font-size: 24px;
+  color: white;
   height: 50px;
   width: 500px;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 25px;
-  border-width: 0px;
-  border-radius: 10px;
-  opacity: 65%;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.1);
 }
 
-button:hover{
-  background-color: #fff;
-  color: #000000;
-  font-weight: bold;
-  opacity: 100%;
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  button{
+    font-size: 18px;
+    width: 300px; 
+}
 }
