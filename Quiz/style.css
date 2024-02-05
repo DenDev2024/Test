@@ -68,16 +68,17 @@ button{
   opacity: 65%;
 }
 
+@media screen and (min-width: 520px) {
 button:hover{
   background-color: #fff;
   color: #000000;
   font-weight: bold;
   opacity: 100%;
 }
+}
 
 @media screen and (max-width: 520px) {
   .panel{
-    
     height: 580px;
     width: 340px;
   }
@@ -98,4 +99,11 @@ button:hover{
     width: 300px;
     font-size: 20px;
   }  
+  
+  button:active{
+    background-color: #fff;
+    color: #000000;
+    font-weight: bold;
+    opacity: 100%;
+  }
 }
