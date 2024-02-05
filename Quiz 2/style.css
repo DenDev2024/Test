@@ -1,84 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'Exo 2', sans-serif;
   box-sizing: border-box;
 }
+body{
+  background: linear-gradient(to bottom, cyan, purple);
+  height: 100vh;
 
-
-img{
-  height: 500px;
-  border-radius: 20px;
-}
-
-.container{
- height: 100vh;
- background-image: url(./images/bgr.jpg);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
-.content{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-
-height: 700px;
-width: 1200px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-}
-
-input{
-
-  text-align: center;
-  height: 40px;
-  width: 400px;
-  font-size: 24px;
-  border: 0px;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-input:focus {
-    outline: none;
-}
-#top{
-  color: rgb(255,215,0);
-  font-size: 24px;
-  font-weight: bold;
 }
 button{
-  height: 25px;
-  width: 100px;
-  border-radius: 10px;
-  border: 0px;
-  color: white;
-  background-color: black;
-  opacity: 50%;
-}
-audio{
-  visibility: hidden;
-}
-#score{
-  color: rgb(255,215,0);
+  margin: 10px;
+  
+  
   font-size: 24px;
-  font-weight: bold;
+  color: white;
+  height: 50px;
+  width: 500px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.1);
 }
-#correct{
-    visibility: hidden;
+
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#play{
-  visibility: hidden;
+@media screen and (max-width: 520px) {
+  button{
+    font-size: 18px;
+    width: 300px; 
 }
-#nope{
-  height: 200px;
-  visibility: hidden;
 }
