@@ -20,8 +20,8 @@
 <script>
   function checkPassword() {
     let password = document.getElementById("field");
-    let passwordEntered = password.value;
-    if(passwordEntered === "хуй") {
+    let passwordEntered = password.value.toLowerCase();
+    if(passwordEntered  === "хуй") {
       window.location.href = "\login.html" ;
     }
 }
